@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <section class="sect-container">
+        <ul class="ul-cont">
+            <li class="item">Lorem ipsum dolor sit amet.</li>
+            <li class="item">Explicabo nisi facilis minus similique?</li>
+            <li class="item">Magni nobis rem quam accusamus.</li>
+            <li class="item">Pariatur tempora ut delectus quasi!</li>
+            <li class="item">Rem soluta laudantium consectetur facere.</li>
+        </ul>
+    </section>
+    <script>
+        const item=document.getElementsByClassName('item')
+        for(const items of item){
+            items.addEventListener('click',function(event){
+                // console.log(event.target.parentNode);
+                event.target.parentNode.removeChild(event.target)
+               
+            })
+        }
+    </script>
+</body>
+</html>
